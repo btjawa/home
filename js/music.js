@@ -1,20 +1,23 @@
 /*
 音乐信息
 
-感谢 @武恩赐 提供的 MetingAPI
-https://api.wuenci.com/meting/api/
+感谢 @injahow 提供的 MetingAPI
+https://api.injahow.cn/meting/api/
 
 作者: imsyy
 主页：https://www.imsyy.top/
 GitHub：https://github.com/imsyy/home
 版权所有，请勿删除
+
+由 btjawa 修改，wenci api已暴毙，改用injahow的api，暂只支持网易云
+https://github.com/btjawa/home
 */
-let server = "netease"; //netease: 网易云音乐; tencent: QQ音乐; kugou: 酷狗音乐; xiami: 虾米; kuwo: 酷我
+
 let type = "playlist"; //song: 单曲; playlist: 歌单; album: 唱片
-let id = "7452421335"; //封面 ID / 单曲 ID / 歌单 ID
+let id = "7534974781"; //封面 ID / 单曲 ID / 歌单 ID
 
 $.ajax({
-    url: "https://api.wuenci.com/meting/api/?server=" + server + "&type=" + type + "&id=" + id,
+    url: "https://api.injahow.cn/meting/?type=" + type + "&id=" + id,
     type: "GET",
     dataType: "JSON",
     success: function (data) {
