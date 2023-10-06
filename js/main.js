@@ -143,7 +143,7 @@ $("#hitokoto").click(function () {
 
 // 获取天气
 // 请前往 https://www.mxnzp.com/doc/list 申请 app_id 和 app_secret
-const mainKey = "57eaea5833ff1616cfd1ff2c4cf9b58a"; // 高德开发者 Key
+const mainKey = "fb80502f02fa93ceb1dcaafc1a780bd5"; // 高德开发者 Key
 const getWeather = () => {
   fetch(`https://restapi.amap.com/v3/ip?key=${mainKey}`)
     .then((response) => response.json())
@@ -359,7 +359,7 @@ $("#switchmore").on("click", function () {
   } else {
     $("#container").attr("class", "container");
     $("#change").html("Hello&nbsp;World&nbsp;!");
-    $("#change1").html("一个小站，主要用来放置一些个人站点~<br>");
+    $("#change1").html("一个小站，主要用来放置一些个人站点~");
   }
 });
 
@@ -408,7 +408,7 @@ window.addEventListener("load", function () {
       //移动端隐藏更多页面
       $("#container").attr("class", "container");
       $("#change").html("Hello&nbsp;World&nbsp;!");
-      $("#change1").html("一个小站，主要用来放置一些个人站点~<br>");
+      $("#change1").html("一个小站，主要用来放置一些个人站点~");
 
       //移动端隐藏弹窗页面
       $("#box").css("display", "none");
@@ -498,7 +498,7 @@ function show_runtime() {
   const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-  document.getElementById("runtime").innerHTML = `本站已安稳度过 ${days} 天 ${hours} 小时 ${minutes} 分 ${seconds} 秒`;
+  document.getElementById("runtime").innerHTML = `<br>本站已安稳度过 ${days} 天 ${hours} 小时 ${minutes} 分 ${seconds} 秒`;
   setTimeout(show_runtime, 1000);
 }
 
