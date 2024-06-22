@@ -472,16 +472,40 @@ let title2 = `
  _| |_| |  | |____) |  | |      | |   
 |_____|_|  |_|_____/   |_|      |_|                                                     
 `;
-let content = `
+let title3 = "白弹汲の主页";
+let title4 = `
+___.    __     __                       
+\\_ |___/  |_  |__|____ __  _  _______   
+ | __ \\   __\\ |  \\__  \\\\ \\/ \\/ /\\__  \\  
+ | \\_\\ \\  |   |  |/ __ \\\\     /  / __ \\_
+ |___  /__/\\__|  (____  /\\/\\_/  (____  /
+     \\/   \\______|    \\/             \\/ 
+`;
+let content1 = `
 版 本 号：3.4
 更新日期：2022-07-24
 
 主页:  https://www.imsyy.top
 Github:  https://github.com/imsyy/home
 `;
+let content2 = `
+Forked from imsyy
+更新日期：2024-06-23
+
+主页:  https://www.btjawa.top
+Github:  https://github.com/btjawa/home
+`;
 console.log(
   `%c${title1} %c${title2}
-%c${content}`,
+%c${content1}
+
+———————————————————————————————————————
+
+  %c${title3} %c${title4}
+%c${content2}`,
+  styleTitle1,
+  styleTitle2,
+  styleContent,
   styleTitle1,
   styleTitle2,
   styleContent
