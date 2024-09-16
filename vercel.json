@@ -1,0 +1,9 @@
+{
+    "redirects": [
+        {
+            "source": "/bilitools",
+            "destination": "https://blog.btjawa.top/2024/bilitools",
+            "permanent": false
+        }
+    ]
+}
