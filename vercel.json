@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "routes": [{
-      "handle": "filesystem"
-    },
+  "redirects": [
     {
-      "src": "/(.*)",
-      "status": 404,
-      "dest": "/"
+      "source": "/bilitools",
+      "destination": "https://blog.btjawa.top/2024/bilitools",
+      "permanent": false
     }
   ]
 }

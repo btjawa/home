@@ -178,6 +178,10 @@ main {
     align-items: center;
 }
 
+.row.chore {
+    text-align: center;
+}
+
 /*头像*/
 .main-img {
     display: flex;
@@ -1037,4 +1041,13 @@ footer {
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #eeeeee;
+}
+
+#link-icon-3,
+#link-icon-4 {
+    width: 1.5rem;
+}
+
+#link-icon-6 {
+    width: 2.5rem;
 }

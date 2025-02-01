@@ -143,7 +143,7 @@ $("#hitokoto").click(function () {
 
 // 获取天气
 // 请前往 https://www.mxnzp.com/doc/list 申请 app_id 和 app_secret
-const mainKey = "57eaea5833ff1616cfd1ff2c4cf9b58a"; // 高德开发者 Key
+const mainKey = "fb80502f02fa93ceb1dcaafc1a780bd5"; // 高德开发者 Key
 const getWeather = () => {
   fetch(`https://restapi.amap.com/v3/ip?key=${mainKey}`)
     .then((response) => response.json())
@@ -283,6 +283,13 @@ $("#social")
     });
   });
 
+  $("#youtube")
+  .mouseover(function () {
+    $("#link-text").html("看看油管~");
+  })
+  .mouseout(function () {
+    $("#link-text").html("通过这里联系我");
+  });
 $("#github")
   .mouseover(function () {
     $("#link-text").html("去 Github 看看");
@@ -297,23 +304,16 @@ $("#qq")
   .mouseout(function () {
     $("#link-text").html("通过这里联系我");
   });
-$("#email")
-  .mouseover(function () {
-    $("#link-text").html("来封 Email");
-  })
-  .mouseout(function () {
-    $("#link-text").html("通过这里联系我");
-  });
 $("#bilibili")
   .mouseover(function () {
-    $("#link-text").html("来 B 站看看 ~");
+    $("#link-text").html("来B站看看~");
   })
   .mouseout(function () {
     $("#link-text").html("通过这里联系我");
   });
-$("#telegram")
+$("#twitter")
   .mouseover(function () {
-    $("#link-text").html("你懂的 ~");
+    $("#link-text").html("你懂的~");
   })
   .mouseout(function () {
     $("#link-text").html("通过这里联系我");
@@ -359,7 +359,7 @@ $("#switchmore").on("click", function () {
   } else {
     $("#container").attr("class", "container");
     $("#change").html("Hello&nbsp;World&nbsp;!");
-    $("#change1").html("一个建立于 21 世纪的小站，存活于互联网的边缘");
+    $("#change1").html("一个小站，主要用来放置一些个人站点~");
   }
 });
 
@@ -408,7 +408,7 @@ window.addEventListener("load", function () {
       //移动端隐藏更多页面
       $("#container").attr("class", "container");
       $("#change").html("Hello&nbsp;World&nbsp;!");
-      $("#change1").html("一个建立于 21 世纪的小站，存活于互联网的边缘");
+      $("#change1").html("一个小站，主要用来放置一些个人站点~");
 
       //移动端隐藏弹窗页面
       $("#box").css("display", "none");
@@ -472,17 +472,58 @@ let title2 = `
  _| |_| |  | |____) |  | |      | |   
 |_____|_|  |_|_____/   |_|      |_|                                                     
 `;
-let content = `
+let title3 = "白弹汲の主页";
+let title4 = `
+___.    __     __                       
+\\_ |___/  |_  |__|____ __  _  _______   
+ | __ \\   __\\ |  \\__  \\\\ \\/ \\/ /\\__  \\  
+ | \\_\\ \\  |   |  |/ __ \\\\     /  / __ \\_
+ |___  /__/\\__|  (____  /\\/\\_/  (____  /
+     \\/   \\______|    \\/             \\/ 
+`;
+let content1 = `
 版 本 号：3.4
 更新日期：2022-07-24
 
 主页:  https://www.imsyy.top
 Github:  https://github.com/imsyy/home
 `;
+let content2 = `
+Forked from imsyy
+更新日期：2024-06-23
+
+主页:  https://www.btjawa.top
+Github:  https://github.com/btjawa/home
+`;
 console.log(
   `%c${title1} %c${title2}
-%c${content}`,
+%c${content1}
+
+———————————————————————————————————————
+
+  %c${title3} %c${title4}
+%c${content2}`,
+  styleTitle1,
+  styleTitle2,
+  styleContent,
   styleTitle1,
   styleTitle2,
   styleContent
 );
+
+
+//运行时间
+
+function show_runtime() {
+  const startTime = new Date("3/10/2023 20:55:00").getTime();
+  const currentTime = new Date().getTime();
+  const diff = currentTime - startTime;
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+  document.getElementById("runtime").innerHTML = `<br>本站已安稳度过 ${days} 天 ${hours} 小时 ${minutes} 分 ${seconds} 秒`;
+  setTimeout(show_runtime, 1000);
+}
+
+show_runtime();
