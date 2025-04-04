@@ -19,8 +19,9 @@
     <!-- jQuery -->
     <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/jquery/3.5.1/jquery.min.js"></script>
     <!-- HarmonyOS Sans -->
-    <!-- 本站 CDN 已开启防盗链，非本站域名不可访问，请更改链接为下方内容，否则自定义字体将失效 -->
+    <!-- 用哔哩哔哩的 CDN -->
     <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css" />
+    <!-- 本站 CDN 已开启防盗链，非本站域名不可访问，请更改链接为下方内容，否则自定义字体将失效 -->
     <!-- <link rel="stylesheet" href="https://cdn.imsyy.top/gh/imsyy/file/font/HarmonyOS_Sans/regular.min.css" /> -->
     <!-- 引入样式 -->
     <link rel="stylesheet" type="text/css"
@@ -86,7 +87,7 @@
                         <div class="main-left">
                             <!--Logo-->
                             <div class="main-img">
-                                <img id="logo-img" src="./img/icon/favicon_other.png" alt="img">
+                                <img id="logo-img" src="./img/icon/favicon_square.png" alt="img">
                                 <div class="img-title">
                                     <span class="img-title-big" id="logo-text-1">btjawa</span>
                                     <span class="img-text" id="logo-text-2">.top</span>
@@ -105,10 +106,7 @@
                             </div>
                             <!--社交链接-->
                             <div class="social" id="social">
-                                <a href="https://www.youtube.com/@BTJ_Shiroi" class="link" id="youtube" style="margin-left: 4px" target="_blank">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
-                                <a href="https://github.com/btjawa" class="link" id="github" target="_blank">
+                                <a href="https://github.com/btjawa" class="link" id="github" style="margin-left: 4px" target="_blank">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
                                 <a href="https://space.bilibili.com/524309471" class="link" id="bilibili" target="_blank">
@@ -208,10 +206,10 @@
                                         </a>
                                     </div>
                                     <div class="col 2">
-                                        <a id="link-url-2" href="https://mirror.btjawa.top/" target="_blank">
+                                        <a id="link-url-2" href="https://github.com/btjawa/BiliTools" target="_blank">
                                             <div class="link-card cards">
-                                                <i id="link-icon-2" class="fa-solid fa-cloud"></i>
-                                                <span class="link-name" id="link-name-2">镜像站</span>
+                                                <img src="./img/icon/BiliTools.png" id="link-icon-2">
+                                                <span class="link-name" id="link-name-2">BiliTools</span>
                                             </div>
                                         </a>
                                     </div>
@@ -219,38 +217,13 @@
                                         <a id="link-url-3" href="https://chat.btjawa.top/" target="_blank">
                                             <div class="link-card cards">
                                                 <img src="./img/icon/chatgpt.svg" id="link-icon-3">
-                                                <span class="link-name" id="link-name-3">&ensp;FakeGPT</span>
+                                                <span class="link-name" id="link-name-3">FakeGPT</span>
                                             </div>
                                         </a>
 				                    </div>
                                 </div>
                                 <!--第二组-->
-                                <div class="row" style="margin-top: 1.5rem;">
-                                    <div class="col">
-                                        <a id="link-url-4" href="https://github.com/btjawa/BiliTools" target="_blank">
-                                            <div class="link-card cards">
-                                                <img src="./img/icon/BiliTools.png" id="link-icon-4">
-                                                <span class="link-name" id="link-name-4">&ensp;BiliTools</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col 2">
-                                        <a id="link-url-5" href="https://github.com/btjawa/BTJGenshinPS" target="_blank">
-                                            <div class="link-card cards">
-                                                <i id="link-icon-5" class="fa-brands fa-node-js"></i>
-                                                <span class="link-name" id="link-name-5">GenshinPS</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col 3">
-                                        <a id="link-url-6" href="https://afdian.net/a/btjawa/" target="_blank">
-                                            <div class="link-card cards">
-                                                <img src="./img/icon/afdian.png" id="link-icon-6">
-                                                <span class="link-name" id="link-name-6">&nbsp;爱发电</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
+                                <!-- <div class="row" style="margin-top: 1.5rem;"></div> -->
                             </div>
                         </div>
                     </div>
@@ -306,14 +279,14 @@
                     <!--网站链接-->
                     <div class="row chore">
                         <div class="col">
-                            <a href="/tools/hex" target="_blank">
+                            <a href="/hex" target="_blank">
                                 <div class="link-card cards">
-                                    <span class="link-name">HEX 2 RGB 2 HSL Conversion</span>
+                                    <span class="link-name">HEX 2 RGB 2 HSL</span>
                                 </div>
                             </a>
                         </div>
                         <div class="col 2">
-                            <a href="/tools/cpp" target="_blank">
+                            <a href="/cpp" target="_blank">
                                 <div class="link-card cards">
                                     <span class="link-name">cpprefrence</span>
                                 </div>
@@ -417,11 +390,7 @@
                                                     <i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;移动端动画及细节
                                                 </span>
                                                 <span class="uptext">
-                                                    <i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;图标更换为 Font
-                                                    Awesome</span>
-                                                <span class="uptext">
-                                                    <i class="fa-solid fa-rotate-left"></i>
-                                                    <a href="./old/" style="color:#efefef">返回旧版站点</a>
+                                                    <i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;图标更换为 Font Awesome
                                                 </span>
                                             </div>
                                         </div>

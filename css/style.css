@@ -573,6 +573,11 @@ i.iconfont.icon-link {
     transition: 0.5s;
 }
 
+.link-card img {
+    width: 1.5rem;
+    margin-right: 10px;
+}
+
 span.link-name {
     font-size: 1.1rem;
 }
@@ -1041,13 +1046,4 @@ footer {
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #eeeeee;
-}
-
-#link-icon-3,
-#link-icon-4 {
-    width: 1.5rem;
-}
-
-#link-icon-6 {
-    width: 2.5rem;
 }

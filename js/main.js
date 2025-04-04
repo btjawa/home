@@ -490,7 +490,7 @@ Github:  https://github.com/imsyy/home
 `;
 let content2 = `
 Forked from imsyy
-更新日期：2024-06-23
+更新日期：2025-04-05
 
 主页:  https://www.btjawa.top
 Github:  https://github.com/btjawa/home
