@@ -3,7 +3,7 @@
   "redirects": [
     {
       "source": "/bilitools",
-      "destination": "https://blog.btjawa.top/2024/bilitools",
+      "destination": "https://blog.btjawa.top/posts/bilitools",
       "permanent": false
     }
   ]
