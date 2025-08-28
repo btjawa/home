@@ -5,6 +5,26 @@
       "source": "/bilitools",
       "destination": "https://blog.btjawa.top/posts/bilitools",
       "permanent": false
+    },
+    {
+      "source": "/bilitools/stream",
+      "destination": "https://docs.btjawa.top/guide/stream.html",
+      "permanent": false
+    },
+    {
+      "source": "/bilitools/naming",
+      "destination": "https://docs.btjawa.top/guide/settings.html#命名",
+      "permanent": false
+    },
+    {
+      "source": "/bilitools/organize",
+      "destination": "https://docs.btjawa.top/guide/settings.html#组织策略",
+      "permanent": false
+    },
+    {
+      "source": "/bilitools/settings",
+      "destination": "https://docs.btjawa.top/guide/settings.html",
+      "permanent": false
     }
   ]
 }
