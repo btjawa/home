@@ -1,6 +1,9 @@
 ({
   canvas: document.getElementById('background') as HTMLCanvasElement | null,
-  color: getComputedStyle(document.documentElement).getPropertyValue('--fg-cv'),
+  color: (b: number) => 
+    `rgb(${window.matchMedia('(prefers-color-schema: dark)').matches
+      ? '51 51 51'
+      : '230 238 250'} / ${b})`,
   timer: 0,
   
   GAP: 50,
@@ -31,10 +34,8 @@
     for (let x = 0; x < this.canvas.width; x += this.GAP) {
       for (let y = 0; y < this.canvas.height; y += this.GAP) {
         const wave = Math.sin((x + y) * Math.PI / this.WAVE  - this.timer);
-        const t = (wave + 1) / 2;
 
-        ctx.fillStyle = `rgb(${this.color} / ${t})`;
-
+        ctx.fillStyle = this.color((wave + 1) / 2);
         ctx.beginPath();
         ctx.arc(x, y, this.RADIUS, 0, Math.PI * 2);
         ctx.fill();
