@@ -14,6 +14,7 @@
     if (!this.canvas) return;
 
     this.render = this.render.bind(this);
+    this.reset = this.reset.bind(this);
 
     window.addEventListener('resize', () => {
       this.reset();
