@@ -1,6 +1,3 @@
----
----
-
 <footer>
   <span>SHA256:R+mkbDR6QWhoFjmxfSB3+gPcDixtg+0x0JaOnBRc1IA</span>
   <span>Copyright &copy; since 2021 btjawa. Powered by <a href="https://astro.build/" target="_blank">Astro</a> &amp; <a href="https://vercel.com/" target="_blank">Vercel</a>.</span>
@@ -14,9 +11,15 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-block: 24px;
+  padding: 24px;
   color: var(--fg-2);
   font-size: 14px;
-  line-height: 20px;
+  line-height: 24px;
+}
+
+@media (max-height: 768px) {
+  footer {
+    position: relative;
+  }
 }
 </style>

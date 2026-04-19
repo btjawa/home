@@ -65,20 +65,23 @@ import FaEnvelope from '../assets/fa-envelope.svg';
 
 #card {
   display: flex;
-  margin: auto;
+  padding: 32px;
   gap: 64px;
   visibility: hidden;
   opacity: 0;
   transform: translateY(20px);
   animation: card-in .5s cubic-bezier(0,.5,.5,1) forwards;
   animation-delay: 500ms;
+  box-sizing: border-box;
   & > div {
     display: flex;
     flex-direction: column;
     margin-block: auto;
+    width: fit-content;
   }
   .left {
     gap: 32px;
+    min-width: 200px;
     img {
       border-radius: 50%;
     }
@@ -103,10 +106,26 @@ import FaEnvelope from '../assets/fa-envelope.svg';
         margin-block: 4px;
         line-height: 24px;
         svg {
-        vertical-align: middle;
+          vertical-align: middle;
           fill: var(--fg);
         }
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    & > div {
+      gap: 16px !important;
+    }
+    .right ul {
+      padding-left: 0;
+      list-style: none;
     }
   }
 }
