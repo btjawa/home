@@ -1,9 +1,9 @@
 ({
   canvas: document.getElementById('background') as HTMLCanvasElement | null,
   color: (b: number) => 
-    `rgb(${window.matchMedia('(prefers-color-schema: dark)').matches
-      ? '51 51 51'
-      : '230 238 250'} / ${b})`,
+    `rgb(${window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? '230 238 250'
+      : '51 51 51'} / ${b})`,
   timer: 0,
   
   GAP: 50,
