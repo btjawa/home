@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import Avatar from '../assets/avatar.jpg';
 import FaGithub from '../assets/fa-github.svg';
+import FaTwitter from '../assets/fa-twitter.svg';
 import FaBlog from '../assets/fa-blog.svg';
 import FaEnvelope from '../assets/fa-envelope.svg';
 ---
@@ -29,6 +30,12 @@ import FaEnvelope from '../assets/fa-envelope.svg';
         <FaGithub width={24} height={24} />
         <a href="https://github.com/btjawa" target="_blank">
           https://github.com/btjawa
+        </a>
+      </li>
+      <li>
+        <FaTwitter width={24} height={24} />
+        <a href="https://twitter.com/@btj2407" target="_blank">
+          https://twitter.com/@btj2407
         </a>
       </li>
       <li>
@@ -65,9 +72,12 @@ import FaEnvelope from '../assets/fa-envelope.svg';
   transform: translateY(20px);
   animation: card-in .5s cubic-bezier(0,.5,.5,1) forwards;
   animation-delay: 500ms;
-  .left {
+  & > div {
     display: flex;
     flex-direction: column;
+    margin-block: auto;
+  }
+  .left {
     gap: 32px;
     img {
       border-radius: 50%;
@@ -78,9 +88,6 @@ import FaEnvelope from '../assets/fa-envelope.svg';
     }
   }
   .right {
-    display: flex;
-    flex-direction: column;
-    margin-block: auto;
     gap: 16px;
     h1 {
       margin: 0;
@@ -94,6 +101,7 @@ import FaEnvelope from '../assets/fa-envelope.svg';
       padding-left: 32px;
       li {
         margin-block: 4px;
+        line-height: 24px;
         svg {
         vertical-align: middle;
           fill: var(--fg);
