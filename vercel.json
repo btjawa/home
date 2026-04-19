@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/bilitools",
+      "destination": "https://blog.btjawa.dev/posts/bilitools",
+      "statusCode": 302
+    }
+  ]
+}

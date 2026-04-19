@@ -1,0 +1,60 @@
+<div id="cursor">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<style>
+#cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 99;
+  visibility: hidden;
+  opacity: 0;
+  width: var(--width);
+  height: var(--height);
+  transition: transform 0.15s ease-out, opacity .5s linear, width .1s linear, height .1s linear;
+  will-change: transform, opacity, width, height;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  div {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 2px solid var(--fg);
+  }
+
+  div:nth-child(1) {
+    top: 0;
+    left: 0;
+    border-bottom: none;
+    border-right: none;
+  }
+
+  div:nth-child(2) {
+    top: 0;
+    right: 0;
+    border-bottom: none;
+    border-left: none;
+  }
+  
+  div:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    border-top: none;
+    border-right: none;
+  }
+  
+  div:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    border-top: none;
+    border-left: none;
+  }
+}
+</style>

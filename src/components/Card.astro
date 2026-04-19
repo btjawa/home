@@ -1,0 +1,105 @@
+---
+import { Image } from 'astro:assets';
+import Avatar from '../assets/avatar.jpg';
+import FaGithub from '../assets/fa-github.svg';
+import FaBlog from '../assets/fa-blog.svg';
+import FaEnvelope from '../assets/fa-envelope.svg';
+---
+
+<div id="card">
+  <div class="left">
+    <a href="https://www.pixiv.net/en/users/16731" target="_blank">
+      <Image
+        src={Avatar}
+        alt="avatar"
+        width={200}
+        height={200}
+      />
+    </a>
+    <span>btjawa &middot; he/him</span>
+  </div>
+  <div class="right">
+    <h1>この素晴らしい世界に祝福を！</h1>
+    <p>
+      Hi there, this is btjawa (白弹汲) ! <br />
+      I work on random projects, appearing in random communities.
+    </p>
+    <ul>
+      <li>
+        <FaGithub width={24} height={24} />
+        <a href="https://github.com/btjawa" target="_blank">
+          https://github.com/btjawa
+        </a>
+      </li>
+      <li>
+        <FaBlog width={24} height={24} />
+        <a href="https://blog.btjawa.dev" target="_blank">
+          https://blog.btjawa.dev
+        </a>
+      </li>
+      <li>
+        <FaEnvelope width={24} height={24} />
+        <a href="mailto:btj2407@gmail.com" target="_blank">
+          btj2407@gmail.com
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<style>
+@keyframes card-in {
+  to {
+    visibility: visible;
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+#card {
+  display: flex;
+  margin: auto;
+  gap: 64px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: card-in .5s cubic-bezier(0,.5,.5,1) forwards;
+  animation-delay: 500ms;
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    img {
+      border-radius: 50%;
+    }
+    span {
+      color: var(--fg-2);
+      text-align: center;
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    margin-block: auto;
+    gap: 16px;
+    h1 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      line-height: 24px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 32px;
+      li {
+        margin-block: 4px;
+        svg {
+        vertical-align: middle;
+          fill: var(--fg);
+        }
+      }
+    }
+  }
+}
+</style>

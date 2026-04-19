@@ -12,6 +12,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.1.6"
+    "@astrojs/vercel": "^10.0.4",
+    "@fontsource/jetbrains-mono": "^5.2.8",
+    "@fontsource/noto-sans-jp": "^5.2.9",
+    "@vercel/analytics": "^2.0.1",
+    "astro": "^6.1.6",
+    "postcss": "^8.5.10",
+    "postcss-preset-env": "^11.2.1",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "postcss-load-config": "^6.0.1"
   }
 }
